@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Vidushi Mohan</title>
-    <link rel ="stylesheet" href="new1.css">
-    <link rel="stylesheet" href="timeline.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="new1.css">
 </head>
-<body style="background-color:#F5F5F5">
-    <!-- Nav Bar-->
-    <div class = "navbar">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" style="background: black;">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    Home
-    About Me
-    Resume
-    Projects
-    Contact
-</div>
+  <!-- Sections -->
+  <div class="container">
+    <section id="home" class="section">
+        <div class="main">Vidushi Mohan</div>
+        <div class="sub-heading">
+            ▵Software Engineer
+            ▵Learner
+            ▵Go Getter
+        </div>
+    </section>
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>I'm a passionate developer with a focus on building impactful solutions.</p>
+    </section>
+    <section id="projects" class="section">
+      <h1>Projects</h1>
+      <p>Here are some of the cool projects I've worked on.</p>
+    </section>
+    <section id="contact" class="section">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out for collaborations or opportunities.</p>
+    </section>
+  </div>
 
+  <script src="script.js" defer></script>
 </body>
 </html>

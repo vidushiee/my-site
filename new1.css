@@ -107,4 +107,30 @@ element {
       margin: 10px 0;
     }
   }
+  .footer{
+    padding: 4rem 0rem;
+    text-align: center;
+    color:white;
+    border-top-right-radius: 1rem;
+  }
   
+  .footer .link{
+    color: white;
+  }
+  .footer .footer-header {
+  
+    font-weight: bold;
+    font-size: large;
+      font-size: xx-large;
+      color: black;
+  
+  }
+  .footer ul{
+    display: inline-flex;
+  }
+  
+  .footer img{
+    width: 60px;
+    padding: 7px;
+  
+  }

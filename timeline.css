@@ -81,6 +81,8 @@ h1 {
 
 .timeline ul {
   /* background: var(--BG-color); */
+  transition: background-color 1s ease-in-out;
+
    background: rgba(240, 246, 255, 0.364); 
 
   padding: 50px 0;

@@ -81,7 +81,8 @@ h1 {
 
 .timeline ul {
   /* background: var(--BG-color); */
-  background: rgba(240, 246, 255, 0.364);
+   background: rgba(240, 246, 255, 0.364); 
+
   padding: 50px 0;
   font: normal 16px/1.5 "Overlock",cursive; 
 

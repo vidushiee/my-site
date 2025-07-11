@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: #1D1F20;
+  color: white;
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.app {
+  height: 90vmin;
+  width: 90vmin;
+  background: white;
+  position: relative;
+  overflow: auto;
+
+  /* Hide the app on load */
+  visibility: hidden;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2% 3.6%;
+  padding: 10px;
+}
+
+.item {
+  cursor: pointer;
+  font-size: 0;
+}
+
+
+/* Base, fonts, and icon styles — keep as-is */
+
+/* Work grid & tiles — keep as-is */
+
+.detail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* Full viewport width */
+  height: 100vh;  /* Full viewport height */
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.detail > img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.detail .content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+  background: #232323;
+  color: #fff;
+}
+
+.detail .title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+}
+
+.detail .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.detail .images img {
+  width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vidushi Mohan</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="figma.css">
+</head>
+
+<body>
+  <div class="location">ONTARIO, CANADA</div>
+  <div class="email">VIDZIMOHAN@GMAIL.COM</div>
+  <div class="name">VIDUSHI MOHAN</div>
+  <div class="icons">
+    <img src="heroicons/database.png" alt="Icon 1">
+    <img src="heroicons/developer.png" alt="Icon 2">
+    <img src="heroicons/devops.png" alt="Icon 3">
+    <img src="heroicons/python.png" alt="Icon 4">
+  </div>
+  <div class="sub-heading">ENGINEER, OPTIMIZER<br>& BUG WHISPERER</div>
+
+  <!-- More Work Section -->
+  <section id="more-work" class="work-grid">
+    <div class="work-tile" data-title="Frugo" data-images="frugo1.png,frugo2.png">
+      <img src="projects/frugo1-thumb.png" alt="Frugo Thumbnail">
+    </div>
+    <div class="work-tile" data-title="Playful Shapes" data-images="shapes1.png,shapes2.png">
+      <img src="projects/shapes1-thumb.png" alt="Shapes Thumbnail">
+    </div>
+  </section>
+
+  <!-- Flip Detail Modal -->
+  <div class="detail">
+    <img src="" alt="Detail Image">
+    <div class="content">
+      <h2 class="title"></h2>
+      <div class="images"></div>
+    </div>
+  </div>
+
+  <!--  GSAP + Flip -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+
+  <!--  Your script -->
+  <script src="tiles.js"></script>
+</body>
+</html>

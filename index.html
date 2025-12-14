@@ -2,136 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Vidushi Mohan</title>
-    <link rel="stylesheet" href="new.css">
+    <title>Vidushi Mohan | Software Engineer</title>
     <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="new.css">
+
 </head>
 <body>
-    <!-- particles.js -->
-    <div id="particles-js"></div>
-
-    <!-- Navbar (Replaced Sidebar) -->
-    <nav class="navbar">
+    <!-- Navigation -->
+    <nav>
         <ul>
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <!-- <li><a href="#timeline" class="nav-link">Timeline</a></li> -->
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chat">Chat</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Main content -->
-    <div class="main">
-        <section id ="home" class="section"></section>Hi, I'm Vidushi Mohan</div>
-    <div class="sub-heading">
-        Crafting Code & Driving Innovation
-    </div>
-    <!-- <div class="tagline">
-
-        ▵Software Engineer
-        ▵Learner
-        ▵Go Getter
-    </div> -->
-
-    <!-- Timeline -->
-    <div class="space"></div>
-    <section class="intro">
-        <section id="about" class="section">
-
-        <div class="container scroll-container">
-            <a href="#page-1">
-                <img class="arrow" src="scroll.svg">
-            </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-location">ONTARIO, CANADA</div>
+        <div class="hero-email">VIDZIMOHAN@GMAIL.COM</div>
+        
+        <h1>VIDUSHI MOHAN</h1>
+        
+        <div class="hero-icons">
+            <div class="icon-box"><img src="heroicons/database.png" style="width: 80px;"></div>
+            <div class="icon-box"><img src="heroicons/development.png" style="width: 80px;"></div>
+            <div class="icon-box"><img src="heroicons/devops.png" style="width: 80px;"></div>
+            <div class="icon-box"><img src="heroicons/python.png" style="width: 80px;"></div>
+        </div>
+        
+        <div class="hero-tagline">
+            SOFTWARE ENGINEER<br>& AI INNOVATOR
+        </div>
+        <div class="hero-subtitle">
+            Building intelligent systems and scalable solutions
         </div>
     </section>
 
-    <section class="timeline">
-        <ul>
-            <li>
-                <div id="page-1">
-                    <time> Intermediate Software Engineer</time> <p class="text">Citibank, Canada</p>
-                    <p class="year-right">2021 - present </p>
+    <!-- Chat Section -->
+    <section id="chat" class="chat-section">
+        <div class="chat-container">
+            <div class="chat-intro">
+                <h2>Ask Me Anything</h2>
+                <p>Powered by AI - Ask about my experience, skills, or projects</p>
+            </div>
+
+            <div class="chat-window">
+                <div class="chat-header">
+                    AI Assistant
                 </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot">
+                        Hi! I'm Vidushi's AI assistant. I can answer questions about her experience, education, skills, and career journey. What would you like to know?
+                    </div>
+                </div>
+
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <div class="chat-suggestions">
+                    <div class="suggestion-chip" onclick="sendSuggestion('Tell me about her current role')">
+                        Current Role
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('What are her technical skills?')">
+                        Technical Skills
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('What is her educational background?')">
+                        Education
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('How can I contact her?')">
+                        Contact Info
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="Ask about Vidushi..." onkeypress="handleKeyPress(event)">
+                    <button class="chat-send" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-image">💻</div>
+                <div class="project-content">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">
+                        An intelligent portfolio website featuring a custom AI chatbot that answers questions about my experience and skills using Claude AI.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML/CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Claude AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://myweather101.netlify.app" class="project-link">View Live →</a>
+                        <a href="https://github.com/vidushiee" class="project-link secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🏦</div>
+                <div class="project-content">
+                    <h3 class="project-title">Bowhead Coil : Machine learning Marketplace</h3>
+                    <p class="project-description">
+Devised an online machine learning marketplace in collaboration with <a href = "https://bowheadhealth.com/" class = "link list-item-inline">Bowhead Health Inc.</a> 
+            which provides a platform for all the Researchers and Developers for a secured exchange of models. The project was created using React JS, ES6 JavaScript, Material UI
+        and Jupyter notebook.
+        The code is private since its an intellectual property of the company.                     </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Jupyter Notebook</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🌍</div>
+                <div class="project-content">
+                    <h3 class="project-title">Roots- Android application</h3>
+                    <p class="project-description">
+                        Created an android application imparting information about the routes and stops of the local transportation used in Jammu (J&K, India). The guidance app worked by letting the user enter the source and destination and popped the data containing the calculated fare, best possible route with a visual enhancement of Google maps. It used a regional transport database including the location of the stop, vehicle allotted for every route, and price for the distance covered and the mobile backend used was Parse for backend & BaaS for frontend programming
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Android</span>
+                        <span class="project-tag">Java</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="about" class="timeline-section">
+        <h2 class="section-title">Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Intermediate Software Engineer</div>
+                    <div class="timeline-company">Citibank, Canada</div>
+                    <div class="timeline-year">2021 - Present</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">MS Digital Transformation & Innovation</div>
+                    <div class="timeline-company">University of Ottawa, Canada</div>
+                    <div class="timeline-year">2019 - 2021</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Graduate Teaching Assistant</div>
+                    <div class="timeline-company">University of Ottawa, Canada</div>
+                    <div class="timeline-year">Oct 2020 - Dec 2020</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Junior Software Developer</div>
+                    <div class="timeline-company">Environment and Climate Change Canada</div>
+                    <div class="timeline-year">Jan 2020 - Apr 2020</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Software Developer</div>
+                    <div class="timeline-company">Bowhead Health Inc.</div>
+                    <div class="timeline-year">May 2020 - Aug 2020</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Risk Analyst</div>
+                    <div class="timeline-company">Amazon, India</div>
+                    <div class="timeline-year">2017 - 2018</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-role">Computer Science Engineering</div>
+                    <div class="timeline-company">University of Jammu, India</div>
+                    <div class="timeline-year">2013 - 2017</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="contact-title">Let's Connect</h2>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/vidushi3108" target="_blank" title="LinkedIn">
+                   <img src="socialicons/linkedin.svg">
+                </a>
             </li>
             <li>
-                <div>
-                    <time>MS Digital Transformation & Innovation </time> <p class="text">University Of Ottawa, Canada</p>
-                    <p class="year-left">2019 - 2021 </p>
-                </div>
+                <a href="https://www.github.com/vidushiee" target="_blank" title="GitHub">
+                    <img src="socialicons/github.svg">
+                </a>
             </li>
             <li>
-                <div>
-                    <time> Graduate Teaching Assistant </time> <p class="text">University Of Ottawa, Canada</p>
-                    <p class="year-right ">2020 Oct - Dec </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time> Junior Software Developer</time> <p class="text">Environment and Climate Change Canada</p>
-                    <p class="year-left">2020 Jan - Apr </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time> Software Developer </time> <p class="text">Bowhead Health Inc.</p>
-                    <p class="year-right">2020 May - Aug </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time> Risk Analyst</time> <p class="text">Amazon, India</p>
-                    <p class="year-left">2017 - 2018 </p>
-                </div>
-            </li>
-            <li>
-                <div id="page-1">
-                    <time> Computer Science Engineering</time> <p class="text">University Of Jammu, India</p>
-                    <p class="year-right">2013 - 2017 </p>
-                </div>
+                <a href="mailto:vidzimohan@gmail.com" title="Email">
+                    <img src="socialicons/mail.png">
+                </a>
             </li>
         </ul>
     </section>
+        <script src="timeline.js"></script>
 
-    <!-- Footer -->
-    <footer class="footer" id="page-3">
-        <section id ="contact" class="section"></section>
-        <div class="footer-header">Let's chat</div>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a href="https://www.linkedin.com/in/vidushi3108" class="link">
-                    <img src="/socialicons/linkedin.svg">
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a href="https://www.github.com/vidushiee" class="link">
-                    <img src="/socialicons/github.svg">
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a href="https://www.facebook.com/vidushi3108" class="link">
-                    <img src="/socialicons/facebook.svg">
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a href="mailto:vidzimohan@gmail.com?subject=Subject&body=Hello, I would like to..." class="link">
-
-                    <img src="/socialicons/mail.png" class="newimg">
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-    <!-- Particles.js script -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'particles.json', function () {
-            console.log('particles.json loaded...')
-        });
-    </script>
-    <script src="timeline.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>

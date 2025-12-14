@@ -574,7 +574,10 @@ nav a:hover {
 .social-links a:hover svg {
     fill: white;
 }
-
+.newimg{
+  height: 69px;
+  margin:-3.9px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {

@@ -655,3 +655,7 @@ nav a.active::after {
         text-align: center;
     }
 }
+.newimg{
+  height: 69px;
+  margin:-3.9px;
+}
